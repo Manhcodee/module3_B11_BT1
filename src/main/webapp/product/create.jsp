@@ -1,0 +1,47 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: manh
+  Date: 12/26/2024
+  Time: 9:12 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Product</title>
+</head>
+<body>
+<h2 style="text-align: center;">Add New Product</h2>
+<form action="/products" method="post">
+  <input type="hidden" name="action" value="create">
+  <table style="margin: 20px auto;">
+    <tr>
+      <td>ID:</td>
+      <td><input type="number" name="id" required></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" required></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="number" step="0.01" name="price" required></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" name="description" required></td>
+    </tr>
+    <tr>
+      <td>Manufacturer:</td>
+      <td><input type="text" name="manufacturer" required></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <button type="submit">Add Product</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
