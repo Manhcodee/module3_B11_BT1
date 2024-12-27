@@ -9,9 +9,9 @@ public class ProductServiceImpl implements ProductService {
     private static final List<Product> products = new ArrayList<>();
 
     static {
-        products.add(new Product(1, "Laptop", 1500.0, "High-end gaming laptop", "Dell"));
-        products.add(new Product(2, "Smartphone", 800.0, "Latest model smartphone", "Apple"));
-        products.add(new Product(3, "Tablet", 500.0, "Tablet for daily use", "Samsung"));
+        products.add(new Product(1, "Iphone", 1500.0, "Mobile", "Apple"));
+        products.add(new Product(2, "Samsung", 800.0, "Mobile", "Samsung"));
+        products.add(new Product(3, "Tablet", 500.0, "Tablet", "Samsung"));
     }
 
     @Override
